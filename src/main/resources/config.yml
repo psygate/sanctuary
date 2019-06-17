@@ -1,0 +1,84 @@
+sanctuaries:
+  sanctuary_type: sponge
+  sanctuary_initial_health: 18000
+  sanctuary_health_per_radius_unit: 1800
+  enabled_worlds: ["world"]
+  disallow_portals: true
+  placement_cooldown: 24h
+
+damage:
+  placement:
+    damage: 10
+    timeout: 2s
+    # Count individual players or all players count as one.
+    global: false
+  tnt:
+    damage: 250
+    timeout: 2s
+  healing_timeout: 10m
+
+regeneration:
+  ticktime: 20
+  heal: 180
+
+growth:
+#not used at the moment
+  cost_per_block:
+    - type: Diamond
+      amount: 0.1
+
+interactions:
+  reinforcement_on_break:
+    strength: 25
+  disable_beacons: true
+
+cache:
+  expire_after_write: 20m
+  expire_after_access: 20m
+  initial_capacity: 100
+  maximum_size: 1000
+
+messages:
+  enter:
+    friendly: "<green>Sanctuary entered. [<name>]"
+    hostile:  "<red>Sanctuary entered. [<name>]"
+  exit:
+    friendly: "<red>Sanctuary left.     [<name>]"
+    hostile:  "<red>Sanctuary left.     [<name>]"
+
+ignored_block_types:
+  - ACACIA_DOOR
+  - BIRCH_DOOR
+  - DARK_OAK_DOOR
+  - IRON_DOOR
+  - JUNGLE_DOOR
+  - SPRUCE_DOOR
+  - WOODEN_DOOR
+  - WOOD_DOOR
+  - CHEST
+  - TRAPPED_CHEST
+  - BED
+  - BED_BLOCK
+  - RAILS
+  - ACTIVATOR_RAIL
+  - DETECTOR_RAIL
+  - POWERED_RAIL
+  - REDSTONE
+  - REDSTONE_COMPARATOR
+  - REDSTONE_COMPARATOR_OFF
+  - REDSTONE_COMPARATOR_ON
+  - REDSTONE_WIRE
+  - CROPS
+  - CARROT
+  - POTATO
+  - NETHER_WARTS
+  - SAPLING
+  - FLOWER_POT
+  - YELLOW_FLOWER
+  - RED_ROSE
+  - CACTUS
+  - ANVIL
+  - DIODE_BLOCK_ON
+  - DIODE_BLOCK_OFF
+  - SIGN_POST
+  - SUGAR_CANE

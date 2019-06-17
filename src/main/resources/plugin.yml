@@ -1,0 +1,62 @@
+name: sanctuary
+version: 0.1
+description: A player driven protection plugin
+load: STARTUP
+author: psygate
+main: com.psygate.minecraft.spigot.sovereignty.sanctuary.Sanctuary
+database: false
+depends: [nucleus, ivory, amethyst]
+
+commands:
+  listloadedsanctuaries:
+    default: op
+    permission: sanctuary.admin
+  spawnhostile:
+    default: op
+    permission: sanctuary.admin
+  decooldown:
+    default: op
+    permission: sanctuary.admin
+  forceheal:
+    default: op
+    permission: sanctuary.admin
+  sanctuaryinfo:
+    default: true
+    permission: sanctuary.stats
+    description: Shows sanctuary information.
+    aliases: [sani]
+  flush:
+    default: op
+    permission: sanctuary.admin
+    description: Flushs the cache.
+  sanctuaryreload:
+    default: op
+    permission: sanctuary.admin
+    description: Reloads the sanctuary cache.
+  forcedamage:
+    default: op
+    permission: sanctuary.admin
+    description: Damages a sanctuary.
+  forcemaxhealth:
+    default: op
+    permission: sanctuary.admin
+    description: Sets the max health for a sanctuary.
+  sanctuarysetname:
+    default: op
+    permission: sanctuary.stats
+    description: Set sanctuary name.
+    aliases: [san]
+  sanctuarytogglescoreboard:
+    default: true
+    description: Toggles display of the sanctuary score board.
+    alises: [santsb]
+  sanctuarytoggleentryexit:
+    default: true
+    description: Toggles display of the sanctuary enter exit messages.
+    alises: [sante]
+
+permissions:
+  sanctuary.admin:
+    default: op
+  sanctuary.stats:
+    default: true
